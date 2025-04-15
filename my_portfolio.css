@@ -340,9 +340,8 @@ nav {
     transform: translateY(-20px)
 }
 .skills {
-    font-family: Poppins;
     margin-top: 100px; /* Or try padding-top */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   #skills {
@@ -378,7 +377,7 @@ nav {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 .bar {
@@ -450,7 +449,7 @@ nav {
     width: 50%;
 }
 .progrss-line.figma span {
-    width: 75%;
+    width: 90%;
 }
 .progrss-line span::after {
     position: absolute;
@@ -494,85 +493,143 @@ nav {
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
+
+
+
+
+
+.progrss-line.creativity span {
+    width: 90%;
+}
+.progrss-line.teamwork span {
+    width: 80%;
+}
+.progrss-line.communication span {
+    width: 70%;
+}
+.progrss-line.time span {
+    width: 85%;
+}
+
+.progrss-line span::after {
+    position: absolute;
+    padding: 10px 8px;
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards; 
+    opacity: 0;
+}
+.progrss-line.creativity span::after{
+    content: "90%";
+}
+.progrss-line.teamwork span::after{
+    content: "80%";
+}
+.progrss-line.communication span::after{
+    content: "70%";
+}
+.progrss-line.time span::after{
+    content: "85%";
+}
+
 @keyframes showText {
     100% {
         opacity: 1;
     }
 }
 
-.radial-bars {
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section Styles */
+#contact {
+    font-family: Arial, sans-serif;
+    background-color: #f4eee0;
+    padding: 60px 20px;
+    color:rgb(109,67, 0);
+  }
+  
+  .contain {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff3e0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color:black;
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+  h1 span{
+    text-align: center;
+    color:rgb(109,67, 0);
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .contain label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .contain input[type="text"],
+  .contain input[type="email"],
+  .contain textarea {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-.radial-bars .radial-bar {
-    width: 50%;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
+    padding: 10px;
+    border: 1px solid rgb(109,67, 0);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f5ddce;
+  }
+  
+  .contain textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contain button {
+    background-color: rgb(109,67, 0);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contain button:hover {
+    background-color: #6d4c41;
+  }
+  
+  .contain .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgb(109,67, 0);
+  }
 
-}
+  
 
-.radial-bars .radial-bar svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) roatate(-90deg);
-    width: 80px;
-    height: 160px;
 
-}
 
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10;
-    stop-color: black;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-
-}
-@keyframes animate-bar{
-    100% {
-        stroke-dashoffset: -1;
-    }
-}
-.path {
-    stroke-width: 10;
-    stroke: rgb(183, 124, 30);
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-
-}
-.path-1 {animation: animate-path1 1s 1s linear forwards;}
-.path-2 {animation: animate-path2 1s 1s linear forwards;}
-.path-3 {animation: animate-path3 1s 1s linear forwards;}
-.path-4 {animation: animate-path4 1s 1s linear forwards;}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 20;;
-    }
-}
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 175;;
-    }
-}
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 125;;
-    }
-}
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 75;;
-    }
-}
 
 
 
